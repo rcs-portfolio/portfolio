@@ -1,0 +1,167 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "work": "Projetos",
+    "contact": "Contatos"
+  },
+  "common": {
+    "identityLabel": "Identificação",
+    "trajectoryLabel": "Sobre",
+    "skillsLabel": "Habilidades",
+    "worksLabel": "Projetos",
+    "contactsLabel": "Contatos",
+    "copyright": "© {year} Rafael Couto Silva",
+    "seo": {
+      "defaultTitle": "Rafael Couto - Desenvolvedor de Software",
+      "defaultDescription": "Desenvolvedor de Software focado em performance e custo inteligente. Soluções modernas, experiências excepcionais.",
+      "keywords": "Rafael Couto Silva, Rafa, Rafa Couto, Rafa Couto DEV, DEV, Software Developer, Fullstack, Flutter, .NET, Nest.js, React, Performance, Custo Inteligente"
+    }
+  },
+  "footer": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "youtube": "YouTube",
+    "freelas": "99 Freelas"
+  },
+  "home": {
+    "identity": "Desenvolvedor de Software",
+    "title": "Criando soluções digitais.",
+    "subtitle": "Desenvolvedor de Software focado em performance e custo inteligente",
+    "imageUrl": "/profile-v2.png",
+    "primaryAction": {
+      "label": "Meus Projetos",
+      "href": "https://github.com/rafaelcsilvadev"
+    },
+    "secondaryAction": {
+      "label": "Meu currículo",
+      "href": "https://www.linkedin.com/in/rafa-couto"
+    }
+  },
+  "about": {
+    "title": "Além do Código",
+    "description": "Mais de cinco anos, muitas tecnologias e uma escolha: fazer o que realmente funciona. Vem ver como cheguei até aqui",
+    "cards": [
+      {
+        "id": "journey",
+        "title": "Minha Jornada",
+        "description": "Olá, sou Rafael Couto Silva, desenvolvedor fullstack com mais de 5 anos transformando ideias em aplicações que realmente funcionam (e sem pesar no bolso).\n\nNesses anos, vi muita coisa, testei muita coisa, e aprendi o que mais importa: foco. Por isso escolhi a dedo as tecnologias que entregam o máximo em performance com custo inteligente: .NET e Blazor, Nest.js e React, e Flutter pro mobile.\n\nDo back ao front, do web ao mobile, eu construo. E construo bem.",
+        "icon": "history_edu",
+        "size": "large"
+      },
+      {
+        "id": "efficiency",
+        "title": "Eficiência",
+        "description": "Eficiência começa muito antes do primeiro código. Antes de qualquer coisa, mergulho no negócio do cliente: entendo o contexto, os desafios e o que realmente precisa ser resolvido.\n\nCom isso em mãos, parto para a modelagem, criando diagramas que traduzem a necessidade em lógica. Só então começo a construir, escolhendo as tecnologias certas para cada problema.\n\nE sim, conto com a ajuda de agentes de IA como o Antigravity e o Claude Code no processo. Não como atalho, mas como ferramenta inteligente para entregar mais, melhor e mais rápido.",
+        "icon": "speed",
+        "size": "small"
+      },
+      {
+        "id": "collaboration",
+        "title": "Colaboração",
+        "description": "Para mim, um bom software começa com um bom time. Por isso, quando trabalho em equipe, meu primeiro passo é entender como cada pessoa funciona, respeitando o ritmo e o jeito de cada um.\n\nAcredito que os melhores resultados surgem de um ambiente sem conflitos desnecessários, onde todos se sentem ouvidos. Gosto de tomar decisões de forma democrática e de compartilhar conhecimento, porque um time que cresce junto entrega muito mais.",
+        "icon": "diversity_3",
+        "size": "small"
+      },
+      {
+        "id": "interests",
+        "title": "A essência Criativa",
+        "description": "Criatividade, pra mim, é encarar cada problema como uma oportunidade de ir além do óbvio. Seja um bug simples ou um desafio estratégico da empresa, meu instinto é sempre explorar caminhos: o que funciona, o que pode funcionar e o que já vi funcionar em outros contextos.\n\nNem toda ideia que proponho é a ideal, e tudo bem. Porque uma ideia provoca outra, uma discussão gera uma solução, e é exatamente assim que as melhores respostas surgem.",
+        "icon": "auto_awesome",
+        "size": "large"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Arsenal Tecnológico",
+    "description": "Cada tecnologia do meu arsenal foi escolhida com um propósito: performance, eficiência e resultado. Do back-end robusto ao front-end impecável, aqui estão as ferramentas que uso para construir o que realmente funciona.",
+    "categories": [
+      {
+        "id": "core",
+        "title": "Tecnologias",
+        "items": [
+          {
+            "name": "Flutter",
+            "icon": "devices",
+            "description": "Cross-platform Mobile",
+            "color": "secondary"
+          },
+          {
+            "name": ".NET",
+            "icon": "terminal",
+            "description": "Robust Backend",
+            "color": "primary"
+          },
+          {
+            "name": "Nest.js",
+            "icon": "dns",
+            "description": "Scalable Node.js",
+            "color": "secondary"
+          },
+          {
+            "name": "Angular",
+            "icon": "api",
+            "description": "Enterprise Frontend",
+            "color": "primary"
+          },
+          {
+            "name": "React",
+            "icon": "rebase_edit",
+            "description": "Modern UI Architecture",
+            "color": "secondary"
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Trabalhos",
+    "titleHighlight": "Selecionados.",
+    "subtitle": "Projetos reais, problemas reais — aqui está o que construí e como resolvi.",
+    "challenge": "Desafio Superado",
+    "prevSlide": "Projeto anterior",
+    "nextSlide": "Próximo projeto",
+    "items": [
+      {
+        "id": "portfolio",
+        "title": "Portfolio Pessoal",
+        "description": "Portfolio desenvolvido com Next.js App Router, TypeScript e Tailwind CSS. Arquitetura Modular MVVM com SSR sempre ativo — zero hooks, zero client-side state.",
+        "tags": ["Next.js", "TypeScript", "Tailwind"],
+        "challenge": "Implementar interatividade (navegação, scroll, animações) sem nenhum hook React ou estado no cliente, apenas Server Components, CSS puro e Server Actions.",
+        "codeUrls": [
+          { "label": "Ver Código", "url": "https://github.com/rcs-portfolio/portfolio" }
+        ],
+        "imageUrl": "/assets/portfolio.png"
+      },
+      {
+        "id": "gms-farmer",
+        "title": "Global Swine Management",
+        "description": "Sistema de gerenciamento moderno para granjas suínas, projetado para tratadores e administradores controlarem operações diárias com eficiência. Front-end mobile em Flutter integrado a uma API robusta em .NET 10, do campo ao escritório em tempo real.",
+        "tags": ["Flutter", ".NET", "PostgreSQL"],
+        "challenge": "Garantir sincronização confiável entre o app Flutter e a API .NET em ambientes rurais com conectividade intermitente, mantendo a integridade dos dados de produção sem perda de registros.",
+        "codeUrls": [
+          { "label": "App", "url": "https://github.com/rcs-portfolio/global_swine_management_farmer" },
+          { "label": "Servidor", "url": "https://github.com/rcs-portfolio/global_swine_management_server" }
+        ],
+        "imageUrl": "/assets/gms_farmer.png"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Vamos ",
+    "titleHighlight": "Conversar?",
+    "subtitle": "Tem um problema pra resolver ou uma ideia que precisa sair do papel? Bora conversar, porque as melhores soluções começam com uma boa troca.",
+    "directChannel": {
+      "title": "Canal Direto",
+      "email": "rafacsilva016@gmail.com"
+    },
+    "social": {
+      "title": "Redes Sociais",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "youtube": "YouTube",
+      "freelas": "99 Freelas"
+    }
+  }
+}

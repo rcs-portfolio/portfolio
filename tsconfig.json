@@ -19,6 +19,8 @@
       }
     ],
     "paths": {
+      "@/feature/*": ["./src/feature/*"],
+      "@/core/*": ["./src/core/*"],
       "@/*": ["./*"]
     }
   },

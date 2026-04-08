@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rafael Couto Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#46484c",
+                    "error-dim": "#d73357",
+                    "surface-container": "#171a1e",
+                    "tertiary-dim": "#2be800",
+                    "surface-variant": "#22262b",
+                    "on-secondary-fixed": "#00394a",
+                    "surface-container-lowest": "#000000",
+                    "tertiary-container": "#2ff801",
+                    "surface-bright": "#282c32",
+                    "secondary-container": "#006782",
+                    "on-surface": "#f8f9fe",
+                    "on-error": "#490013",
+                    "tertiary": "#8eff71",
+                    "error": "#ff6e84",
+                    "error-container": "#a70138",
+                    "on-surface-variant": "#a9abb0",
+                    "secondary-fixed": "#89ddff",
+                    "on-secondary": "#003e50",
+                    "tertiary-fixed-dim": "#2be800",
+                    "tertiary-fixed": "#2ff801",
+                    "on-primary": "#4f006c",
+                    "surface-container-high": "#1c2025",
+                    "background": "#0c0e12",
+                    "on-background": "#f8f9fe",
+                    "primary-dim": "#bc00fb",
+                    "on-secondary-fixed-variant": "#005870",
+                    "secondary": "#00cbfe",
+                    "primary-container": "#d978ff",
+                    "surface-tint": "#e08dff",
+                    "secondary-fixed-dim": "#50d2ff",
+                    "surface-dim": "#0c0e12",
+                    "surface": "#0c0e12",
+                    "inverse-on-surface": "#535559",
+                    "primary-fixed": "#d978ff",
+                    "on-tertiary-container": "#0b5800",
+                    "on-primary-fixed-variant": "#4c0068",
+                    "on-primary-container": "#3d0055",
+                    "primary": "#e08dff",
+                    "outline": "#73757a",
+                    "on-error-container": "#ffb2b9",
+                    "on-primary-fixed": "#000000",
+                    "on-tertiary-fixed": "#064200",
+                    "secondary-dim": "#00bcec",
+                    "on-tertiary-fixed-variant": "#0d6200",
+                    "surface-container-highest": "#22262b",
+                    "inverse-primary": "#9a00cf",
+                    "inverse-surface": "#f8f9fe",
+                    "on-tertiary": "#0d6100",
+                    "primary-fixed-dim": "#d160ff",
+                    "on-secondary-container": "#eff9ff",
+                    "surface-container-low": "#111417"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(34, 38, 43, 0.6);
+            backdrop-filter: blur(12px);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(224, 141, 255, 0.4);
+        }
+        .bg-mesh {
+            background-image: radial-gradient(at 0% 0%, rgba(224, 141, 255, 0.15) 0px, transparent 50%),
+                              radial-gradient(at 100% 100%, rgba(0, 203, 254, 0.15) 0px, transparent 50%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary-fixed min-h-screen overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0c0e12]/60 backdrop-blur-xl shadow-[0_0_20px_rgba(188,0,251,0.15)]">
+<div class="flex items-center justify-between px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#e08dff]" data-icon="terminal">terminal</span>
+<h1 class="text-xl font-bold bg-gradient-to-r from-[#e08dff] to-[#00cbfe] bg-clip-text text-transparent font-['Space_Grotesk'] tracking-tighter">Rafael Couto</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8 font-label text-sm uppercase tracking-widest">
+<a class="text-[#e08dff] hover:text-[#00cbfe] transition-colors duration-200" href="#">Home</a>
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200" href="#">About</a>
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200" href="#">Work</a>
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200" href="#">Contact</a>
+</nav>
+<button class="material-symbols-outlined text-on-surface hover:text-primary transition-colors">menu</button>
+</div>
+</header>
+<main class="relative pt-16 bg-mesh">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex flex-col items-center justify-center px-6 overflow-hidden">
+<div class="absolute inset-0 pointer-events-none opacity-20">
+<img alt="" class="w-full h-full object-cover" data-alt="abstract digital landscape with glowing cyan and magenta network lines on a dark background representing data flow and connectivity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSbbsJ1olRWiTT1X98-kEMWetx1gcHpc9m46I2bq4Dwsz_YKNoYbTdNqtXyJOi80MWIkLRKL7-0HjghWWrsA3gws7I805fxubixsnxBTYWe4xDY_5xioM92bz34PmvWl85OCjA6aBEsAo45KzFRS2Xua3UNgXXJvnQmRMZIZ2BAcdaO3SevXWvOW439T-qDk1_IfXxGxaHXEnu64ndGge8VhcKjWDlu21OKpExsWOwuP6M4ajN3KrW6twpNAbU0nnwwdiPsWbK4ujI"/>
+</div>
+<div class="relative z-10 w-full max-w-5xl flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+<div class="space-y-4 max-w-2xl">
+<div class="flex items-center gap-3">
+<div class="h-px w-12 bg-primary"></div>
+<span class="font-label text-primary text-xs uppercase tracking-[0.3em]">Identity: Cyber Architect</span>
+</div>
+<h2 class="font-headline text-5xl md:text-7xl font-bold leading-none tracking-tight">
+                        Crafting <span class="bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent">Digital Futures.</span>
+</h2>
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-lg leading-relaxed">
+                        Modern Solutions, Exceptional Experiences. I build high-performance systems that bridge the gap between imagination and execution.
+                    </p>
+<div class="pt-6 flex flex-wrap gap-4">
+<button class="bg-gradient-to-r from-primary to-secondary text-on-primary-fixed px-8 py-4 rounded-lg font-bold shadow-[0_0_30px_rgba(188,0,251,0.3)] hover:scale-105 active:scale-95 transition-all duration-200 uppercase tracking-wider text-sm flex items-center gap-2">
+                            Launch Project <span class="material-symbols-outlined text-sm">rocket_launch</span>
+</button>
+<button class="bg-surface-variant/40 backdrop-blur px-8 py-4 rounded-lg font-bold border border-white/5 hover:bg-surface-variant/60 transition-all uppercase tracking-wider text-sm">
+                            View Archive
+                        </button>
+</div>
+</div>
+<!-- Asymmetric Floating Stats/Cards -->
+<div class="hidden lg:flex flex-col gap-6 translate-y-[-2rem]">
+<div class="glass-card p-6 rounded-2xl border border-white/5 shadow-2xl w-64 transform -rotate-3 hover:rotate-0 transition-transform duration-500">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="auto_awesome">auto_awesome</span>
+<h4 class="font-headline text-2xl font-bold">128+</h4>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Architected Modules</p>
+</div>
+<div class="glass-card p-6 rounded-2xl border border-white/5 shadow-2xl w-64 transform translate-x-8 rotate-3 hover:rotate-0 transition-transform duration-500">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="speed">speed</span>
+<h4 class="font-headline text-2xl font-bold">99.9%</h4>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Efficiency Metrics</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Section -->
+<section class="py-24 px-6 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-4">
+<h3 class="font-headline text-3xl md:text-5xl font-medium max-w-md">System Architecture &amp; Capabilities</h3>
+<p class="text-on-surface-variant font-body max-w-sm">Breaking down the core components of our digital ecosystem using cutting-edge glassmorphic standards.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Feature Card -->
+<div class="md:col-span-2 glass-card rounded-3xl p-8 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-9xl" data-icon="cloud_done">cloud_done</span>
+</div>
+<div class="relative z-10 flex flex-col h-full justify-between gap-12">
+<div>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Cloud Native</span>
+<h4 class="font-headline text-3xl font-bold mb-4">Scalable Infrastructure</h4>
+<p class="text-on-surface-variant leading-relaxed max-w-md">Deploying globally distributed systems with sub-millisecond latency and automated failover protocols.</p>
+</div>
+<div class="flex gap-2">
+<span class="px-4 py-2 bg-surface-container-highest rounded-xl text-xs font-medium">K8S</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-xl text-xs font-medium">Terraform</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-xl text-xs font-medium">AWS</span>
+</div>
+</div>
+</div>
+<!-- Side Card -->
+<div class="bg-surface-container-high rounded-3xl p-8 flex flex-col justify-between border-t border-white/5">
+<span class="material-symbols-outlined text-primary text-5xl" data-icon="security">security</span>
+<div>
+<h4 class="font-headline text-2xl font-bold mb-2">Hardened Core</h4>
+<p class="text-on-surface-variant text-sm">Military-grade encryption and zero-trust security layers at every interaction point.</p>
+</div>
+</div>
+<!-- Bottom Cards -->
+<div class="bg-surface-container-high rounded-3xl p-8 flex flex-col justify-between border-t border-white/5">
+<span class="material-symbols-outlined text-secondary text-5xl" data-icon="data_exploration">data_exploration</span>
+<div>
+<h4 class="font-headline text-2xl font-bold mb-2">Deep Insights</h4>
+<p class="text-on-surface-variant text-sm">Real-time analytical dashboards providing granular visibility into user behavior.</p>
+</div>
+</div>
+<div class="md:col-span-2 glass-card rounded-3xl p-8 relative overflow-hidden flex flex-col md:flex-row items-center gap-8">
+<div class="w-full md:w-1/2 aspect-video bg-surface-container-lowest rounded-2xl overflow-hidden shadow-inner">
+<img alt="" class="w-full h-full object-cover" data-alt="ultra-modern computer hardware components glowing with blue and violet LED lights in a dark clean environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0EDqDRLihMOInSdKYQvVG1YMOZn2Dx_E1ZvO8awYWd-vubvGPzbldCn8JqwSgE8DkiQTTAflwaVtG4E5IuSbGLIMkg_Hf7COatsnLBerYlCPSTL0yHDfuRfpGNy2BSuHUu7y9rmacFtt2NDExEn1ZVy0BQSOKVjVhFT6LoCBRbBw3-SJlS2XuhlhEWABSDavIDOIj6A2Rfam_fVPYhKmW4UtOcr4uxBQZjz4r9NV9NO1ubGf4_cq_AobXhsmOQAJNp3eI5P6IbUpp"/>
+</div>
+<div class="w-full md:w-1/2">
+<h4 class="font-headline text-2xl font-bold mb-4">Hardware Optimized</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Software that leverages the full power of modern silicon. Performance is not a feature; it is our foundation.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#111417] w-full pt-12 pb-24 px-6">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 w-full max-w-7xl mx-auto">
+<div class="text-center md:text-left">
+<span class="text-[#e08dff] font-bold text-lg">Rafael Couto</span>
+<p class="font-['Inter'] text-xs text-slate-500 mt-1">© 2024 Rafael Couto // BUILT IN THE VOID</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-[#e08dff] transition-all font-['Inter'] text-xs font-medium uppercase tracking-widest" href="#">GitHub</a>
+<a class="text-slate-500 hover:text-[#e08dff] transition-all font-['Inter'] text-xs font-medium uppercase tracking-widest" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-[#e08dff] transition-all font-['Inter'] text-xs font-medium uppercase tracking-widest" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 px-4 pb-6 flex justify-around items-center">
+<div class="bg-[#22262b]/60 backdrop-blur-md w-full h-16 rounded-2xl border border-white/10 flex justify-around items-center shadow-[0_8px_32px_0_rgba(0,0,0,0.8)]">
+<div class="flex flex-col items-center justify-center text-[#e08dff] bg-white/5 rounded-xl p-2 shadow-[0_0_15px_rgba(224,141,255,0.3)]">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">About</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="code">code</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Skills</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Work</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Contact</span>
+</div>
+</div>
+</nav>
+</body></html>

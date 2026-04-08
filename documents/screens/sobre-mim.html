@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#46484c",
+                    "error-dim": "#d73357",
+                    "surface-container": "#171a1e",
+                    "tertiary-dim": "#2be800",
+                    "surface-variant": "#22262b",
+                    "on-secondary-fixed": "#00394a",
+                    "surface-container-lowest": "#000000",
+                    "tertiary-container": "#2ff801",
+                    "surface-bright": "#282c32",
+                    "secondary-container": "#006782",
+                    "on-surface": "#f8f9fe",
+                    "on-error": "#490013",
+                    "tertiary": "#8eff71",
+                    "error": "#ff6e84",
+                    "error-container": "#a70138",
+                    "on-surface-variant": "#a9abb0",
+                    "secondary-fixed": "#89ddff",
+                    "on-secondary": "#003e50",
+                    "tertiary-fixed-dim": "#2be800",
+                    "tertiary-fixed": "#2ff801",
+                    "on-primary": "#4f006c",
+                    "surface-container-high": "#1c2025",
+                    "background": "#0c0e12",
+                    "on-background": "#f8f9fe",
+                    "primary-dim": "#bc00fb",
+                    "on-secondary-fixed-variant": "#005870",
+                    "secondary": "#00cbfe",
+                    "primary-container": "#d978ff",
+                    "surface-tint": "#e08dff",
+                    "secondary-fixed-dim": "#50d2ff",
+                    "surface-dim": "#0c0e12",
+                    "surface": "#0c0e12",
+                    "inverse-on-surface": "#535559",
+                    "primary-fixed": "#d978ff",
+                    "on-tertiary-container": "#0b5800",
+                    "on-primary-fixed-variant": "#4c0068",
+                    "on-primary-container": "#3d0055",
+                    "primary": "#e08dff",
+                    "outline": "#73757a",
+                    "on-error-container": "#ffb2b9",
+                    "on-primary-fixed": "#000000",
+                    "on-tertiary-fixed": "#064200",
+                    "secondary-dim": "#00bcec",
+                    "on-tertiary-fixed-variant": "#0d6200",
+                    "surface-container-highest": "#22262b",
+                    "inverse-primary": "#9a00cf",
+                    "inverse-surface": "#f8f9fe",
+                    "on-tertiary": "#0d6100",
+                    "primary-fixed-dim": "#d160ff",
+                    "on-secondary-container": "#eff9ff",
+                    "surface-container-low": "#111417"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Space Grotesk"
+                    ],
+                    "body": [
+                            "Inter"
+                    ],
+                    "label": [
+                            "Inter"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .glass-panel {
+            background: rgba(34, 38, 43, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .neon-glow-primary {
+            box-shadow: 0 0 20px rgba(224, 141, 255, 0.25);
+        }
+        .neon-border {
+            position: relative;
+        }
+        .neon-border::after {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, #e08dff, #00cbfe);
+            border-radius: inherit;
+            z-index: -1;
+            opacity: 0.8;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30 selection:text-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0c0e12]/60 backdrop-blur-xl shadow-[0_0_20px_rgba(188,0,251,0.15)]">
+<div class="flex items-center justify-between px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#e08dff]" data-icon="terminal">terminal</span>
+<span class="text-xl font-bold bg-gradient-to-r from-[#e08dff] to-[#00cbfe] bg-clip-text text-transparent font-headline tracking-tighter">Rafael Couto</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200 font-medium" href="#">Home</a>
+<a class="text-[#e08dff] hover:text-[#00cbfe] transition-colors duration-200 font-medium" href="#">About</a>
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200 font-medium" href="#">Skills</a>
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200 font-medium" href="#">Work</a>
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200 font-medium" href="#">Contact</a>
+</nav>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface" data-icon="menu">menu</span>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 order-2 lg:order-1">
+<h1 class="font-headline text-[3.5rem] font-bold leading-tight mb-6 tracking-tight">
+                        Beyond the <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Code</span>.
+                    </h1>
+<p class="text-on-surface-variant text-lg max-w-xl mb-8 leading-relaxed">
+                        I am a digital architect specialized in bridging the gap between cold logic and human emotion. When I'm not optimizing render cycles, I'm exploring the boundaries of virtual aesthetics.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-r from-primary to-secondary text-on-primary-fixed px-8 py-3 rounded-lg font-semibold hover:shadow-[0_0_30px_rgba(188,0,251,0.3)] transition-all duration-200 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+                            Download CV (PDF)
+                        </button>
+<button class="glass-panel border border-white/10 text-on-surface px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+                            LinkedIn Profile
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 order-1 lg:order-2 flex justify-center lg:justify-end">
+<div class="relative w-64 h-64 lg:w-80 lg:h-80 rounded-2xl neon-border overflow-hidden group">
+<img alt="Profile photo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern professional portrait of a tech designer with soft neon violet rim lighting in a futuristic dark studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSyDRxULpbazSBZT2rSwGFvriMYGihE1QonQnBPuxe52A3wCcZ9Ze4-L3kUw8OoItejXDZQDgWH66szA2rxTm_EBx68efs-mCo0dsgXfvztVCpG7j0O6v9p7q50-qK_OK82XkBMxmurdSn7qCJdsMTCn6wg8dkefrbo6unKsc4FnteUCFGIqL09H-fmkfveE-dsUVmIjBmhd1onxd0fs6aQ2MrzwRICTv6wrMblv8VFcNZbyNuWdjm4INHaIJ0j6uIUOr59ExPF3t8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Journey & Hobbies -->
+<section class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Journey Card -->
+<div class="md:col-span-2 glass-panel p-8 rounded-xl border border-white/5 space-y-4">
+<div class="flex items-center gap-3 text-secondary">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+<h2 class="font-headline text-xl font-bold">How it started</h2>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                        My journey didn't begin with a terminal, but with a sketchbook. I spent my formative years obsessing over architectural blueprints and light physics. Transitioning to software engineering felt like gaining a superpower—the ability to build structures that don't just stand, but interact and evolve.
+                    </p>
+<p class="text-on-surface-variant leading-relaxed">
+                        Today, I apply those same principles of balance, tension, and harmony to user interfaces. I believe the best code is invisible, serving only to highlight the experience it supports.
+                    </p>
+</div>
+<!-- Personal Fit Card -->
+<div class="glass-panel p-8 rounded-xl border border-white/5 bg-primary/5">
+<div class="flex items-center gap-3 text-primary mb-4">
+<span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span>
+<h2 class="font-headline text-xl font-bold">The Fit</h2>
+</div>
+<ul class="space-y-4">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+<span class="text-sm text-on-surface">Collaborative Architect</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+<span class="text-sm text-on-surface">Detail Obsessed</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+<span class="text-sm text-on-surface">Adaptable Problem Solver</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Hobby Card 1 -->
+<div class="glass-panel p-6 rounded-xl border border-white/5 flex flex-col items-center text-center group">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="camera">camera</span>
+</div>
+<h3 class="font-bold mb-2">Street Photography</h3>
+<p class="text-xs text-on-surface-variant">Capturing the soul of the neon-lit city at night.</p>
+</div>
+<!-- Hobby Card 2 -->
+<div class="glass-panel p-6 rounded-xl border border-white/5 flex flex-col items-center text-center group">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center mb-4 text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="piano">piano</span>
+</div>
+<h3 class="font-bold mb-2">Synthwave Production</h3>
+<p class="text-xs text-on-surface-variant">Engineering 80s inspired digital soundscapes.</p>
+</div>
+<!-- Hobby Card 3 -->
+<div class="glass-panel p-6 rounded-xl border border-white/5 flex flex-col items-center text-center group">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="fitness_center">fitness_center</span>
+</div>
+<h3 class="font-bold mb-2">Hybrid Fitness</h3>
+<p class="text-xs text-on-surface-variant">Maintaining the hardware for the software.</p>
+</div>
+<!-- Hobby Card 4 -->
+<div class="glass-panel p-6 rounded-xl border border-white/5 flex flex-col items-center text-center group">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center mb-4 text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="travel_explore">travel_explore</span>
+</div>
+<h3 class="font-bold mb-2">Cyberpunk Lore</h3>
+<p class="text-xs text-on-surface-variant">Analyzing futurism and speculative design.</p>
+</div>
+</div>
+</section>
+<!-- Stats Section (Asymmetric) -->
+<section class="mt-20 flex flex-col md:flex-row gap-8 justify-between items-end border-t border-white/5 pt-12">
+<div class="max-w-md">
+<h3 class="font-headline text-2xl font-bold mb-4">The Metric of Passion</h3>
+<p class="text-on-surface-variant text-sm italic">"Complexity is easy, simplicity is the ultimate sophistication." — Leonard da Vinci (Modernized)</p>
+</div>
+<div class="flex gap-12">
+<div class="text-center">
+<div class="text-4xl font-bold text-primary font-headline">50+</div>
+<div class="text-[10px] uppercase tracking-widest text-slate-500 font-medium">Projects Shipped</div>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-secondary font-headline">8k</div>
+<div class="text-[10px] uppercase tracking-widest text-slate-500 font-medium">Hours of Dev</div>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-primary font-headline">∞</div>
+<div class="text-[10px] uppercase tracking-widest text-slate-500 font-medium">Curiosity</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-12 pb-24 px-6 bg-[#111417]">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="text-[#e08dff] font-bold">Rafael Couto</span>
+<span class="text-slate-500 font-['Inter'] text-xs">© 2024 // BUILT IN THE VOID</span>
+</div>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-[#e08dff] transition-all text-xs" href="#">GitHub</a>
+<a class="text-[#00cbfe] underline decoration-2 underline-offset-4 text-xs font-medium" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-[#e08dff] transition-all text-xs" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 px-4 pb-6 flex justify-around items-center">
+<div class="bg-[#22262b]/60 backdrop-blur-md rounded-2xl border border-white/10 w-full flex justify-around p-2 shadow-[0_8px_32px_0_rgba(0,0,0,0.8)]">
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e08dff] bg-white/5 rounded-xl p-2 shadow-[0_0_15px_rgba(224,141,255,0.3)] scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">About</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="code">code</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Skills</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Work</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Contact</span>
+</a>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#46484c",
+                    "error-dim": "#d73357",
+                    "surface-container": "#171a1e",
+                    "tertiary-dim": "#2be800",
+                    "surface-variant": "#22262b",
+                    "on-secondary-fixed": "#00394a",
+                    "surface-container-lowest": "#000000",
+                    "tertiary-container": "#2ff801",
+                    "surface-bright": "#282c32",
+                    "secondary-container": "#006782",
+                    "on-surface": "#f8f9fe",
+                    "on-error": "#490013",
+                    "tertiary": "#8eff71",
+                    "error": "#ff6e84",
+                    "error-container": "#a70138",
+                    "on-surface-variant": "#a9abb0",
+                    "secondary-fixed": "#89ddff",
+                    "on-secondary": "#003e50",
+                    "tertiary-fixed-dim": "#2be800",
+                    "tertiary-fixed": "#2ff801",
+                    "on-primary": "#4f006c",
+                    "surface-container-high": "#1c2025",
+                    "background": "#0c0e12",
+                    "on-background": "#f8f9fe",
+                    "primary-dim": "#bc00fb",
+                    "on-secondary-fixed-variant": "#005870",
+                    "secondary": "#00cbfe",
+                    "primary-container": "#d978ff",
+                    "surface-tint": "#e08dff",
+                    "secondary-fixed-dim": "#50d2ff",
+                    "surface-dim": "#0c0e12",
+                    "surface": "#0c0e12",
+                    "inverse-on-surface": "#535559",
+                    "primary-fixed": "#d978ff",
+                    "on-tertiary-container": "#0b5800",
+                    "on-primary-fixed-variant": "#4c0068",
+                    "on-primary-container": "#3d0055",
+                    "primary": "#e08dff",
+                    "outline": "#73757a",
+                    "on-error-container": "#ffb2b9",
+                    "on-primary-fixed": "#000000",
+                    "on-tertiary-fixed": "#064200",
+                    "secondary-dim": "#00bcec",
+                    "on-tertiary-fixed-variant": "#0d6200",
+                    "surface-container-highest": "#22262b",
+                    "inverse-primary": "#9a00cf",
+                    "inverse-surface": "#f8f9fe",
+                    "on-tertiary": "#0d6100",
+                    "primary-fixed-dim": "#d160ff",
+                    "on-secondary-container": "#eff9ff",
+                    "surface-container-low": "#111417"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(34, 38, 43, 0.6);
+        backdrop-filter: blur(12px);
+      }
+      .neon-glow-hover:hover {
+        box-shadow: 0 0 20px rgba(188, 0, 251, 0.3);
+      }
+      .gradient-border-focus:focus-within {
+        border-image: linear-gradient(135deg, #e08dff, #00cbfe) 1;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0c0e12]/60 backdrop-blur-xl shadow-[0_0_20px_rgba(188,0,251,0.15)]">
+<div class="flex items-center justify-between px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#e08dff]" data-icon="terminal">terminal</span>
+<span class="text-xl font-bold bg-gradient-to-r from-[#e08dff] to-[#00cbfe] bg-clip-text text-transparent font-['Space_Grotesk'] tracking-tighter">Rafael Couto</span>
+</div>
+<div class="hidden md:flex items-center gap-8 font-['Inter'] text-sm font-medium">
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200" href="#">Home</a>
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200" href="#">About</a>
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200" href="#">Skills</a>
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200" href="#">Work</a>
+<a class="text-[#e08dff] transition-colors duration-200" href="#">Contact</a>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-16 md:mb-24">
+<h1 class="font-headline text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-none">
+                Let’s <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Collaborate.</span>
+</h1>
+<p class="text-on-surface-variant max-w-xl text-lg md:text-xl font-light leading-relaxed">
+                Whether you have a specific project in mind or just want to explore the digital frontier, I'm ready to build the extraordinary.
+            </p>
+</header>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+<!-- Contact Form Block -->
+<div class="md:col-span-7 bg-surface-container-high rounded-xl p-8 md:p-12 relative overflow-hidden shadow-2xl">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-[80px] rounded-full -mr-16 -mt-16"></div>
+<form class="space-y-8 relative z-10">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="space-y-2 group">
+<label class="text-xs uppercase tracking-widest text-on-surface-variant font-medium ml-1">Your Name</label>
+<input class="w-full bg-surface-container-lowest border-b-2 border-outline-variant focus:border-primary px-4 py-3 outline-none transition-all duration-300 text-on-surface placeholder:text-outline focus:bg-primary/5" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2 group">
+<label class="text-xs uppercase tracking-widest text-on-surface-variant font-medium ml-1">Email Address</label>
+<input class="w-full bg-surface-container-lowest border-b-2 border-outline-variant focus:border-secondary px-4 py-3 outline-none transition-all duration-300 text-on-surface placeholder:text-outline focus:bg-secondary/5" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2 group">
+<label class="text-xs uppercase tracking-widest text-on-surface-variant font-medium ml-1">Subject</label>
+<input class="w-full bg-surface-container-lowest border-b-2 border-outline-variant focus:border-primary px-4 py-3 outline-none transition-all duration-300 text-on-surface placeholder:text-outline focus:bg-primary/5" placeholder="Project Inquiry" type="text"/>
+</div>
+<div class="space-y-2 group">
+<label class="text-xs uppercase tracking-widest text-on-surface-variant font-medium ml-1">Message</label>
+<textarea class="w-full bg-surface-container-lowest border-b-2 border-outline-variant focus:border-secondary px-4 py-3 outline-none transition-all duration-300 text-on-surface placeholder:text-outline resize-none focus:bg-secondary/5" placeholder="Tell me about your vision..." rows="4"></textarea>
+</div>
+<button class="group relative w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary to-secondary rounded-lg font-bold text-on-primary-fixed overflow-hidden transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-[0_0_24px_rgba(188,0,251,0.25)]">
+<span class="relative z-10 flex items-center justify-center gap-2">
+                            Initialize Transmission
+                            <span class="material-symbols-outlined text-xl" data-icon="send">send</span>
+</span>
+<div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+</button>
+</form>
+</div>
+<!-- Sidebar Info Blocks -->
+<div class="md:col-span-5 space-y-6">
+<!-- Social & Direct Contact Card -->
+<div class="bg-surface-container-low p-8 rounded-xl space-y-8 border border-white/5">
+<div>
+<h3 class="text-xs uppercase tracking-[0.2em] text-secondary font-bold mb-4">Direct Channel</h3>
+<a class="text-2xl font-headline font-medium hover:text-primary transition-colors duration-200 flex items-center gap-3" href="mailto:architect@void.neon">
+                            architect@void.neon
+                            <span class="material-symbols-outlined text-on-surface-variant text-base" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+<div>
+<h3 class="text-xs uppercase tracking-[0.2em] text-secondary font-bold mb-4">Social Network</h3>
+<div class="flex flex-wrap gap-3">
+<a class="px-5 py-2.5 bg-surface-container-highest rounded-full text-sm font-medium hover:bg-white/10 transition-all border border-white/5 flex items-center gap-2 group" href="#">
+<span class="text-primary group-hover:scale-110 transition-transform">GitHub</span>
+</a>
+<a class="px-5 py-2.5 bg-surface-container-highest rounded-full text-sm font-medium hover:bg-white/10 transition-all border border-white/5 flex items-center gap-2 group" href="#">
+<span class="text-primary group-hover:scale-110 transition-transform">LinkedIn</span>
+</a>
+<a class="px-5 py-2.5 bg-surface-container-highest rounded-full text-sm font-medium hover:bg-white/10 transition-all border border-white/5 flex items-center gap-2 group" href="#">
+<span class="text-primary group-hover:scale-110 transition-transform">Twitter</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Schedule Block (Calendly Style) -->
+<div class="bg-gradient-to-br from-surface-container-highest to-surface-container-low p-8 rounded-xl border border-primary/10 relative overflow-hidden group">
+<div class="absolute bottom-0 right-0 p-4 opacity-5 translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500">
+<span class="material-symbols-outlined text-9xl" data-icon="event">event</span>
+</div>
+<div class="relative z-10">
+<h3 class="text-xl font-headline font-bold mb-2">Sync Your Schedule</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                            Skip the back-and-forth. Book a 30-minute deep-dive session directly into my calendar.
+                        </p>
+<button class="inline-flex items-center gap-2 text-sm font-bold text-secondary-fixed hover:text-secondary transition-colors underline decoration-2 underline-offset-8">
+                            Open Booking Portal
+                            <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Status Indicator -->
+<div class="bg-surface-container-lowest/50 backdrop-blur-sm p-4 rounded-lg flex items-center justify-between border border-white/5">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_#8eff71]"></div>
+<span class="text-xs font-medium uppercase tracking-widest text-on-surface-variant">Systems Operational</span>
+</div>
+<span class="text-[10px] font-mono text-outline">LATENCY: 12ms</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-12 pb-24 px-6 bg-[#111417]">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 w-full max-w-7xl mx-auto">
+<div class="text-[#e08dff] font-bold font-headline tracking-tighter">
+                Rafael Couto
+            </div>
+<p class="font-['Inter'] text-xs text-slate-500">
+                © 2024 Rafael Couto // BUILT IN THE VOID
+            </p>
+<div class="flex gap-6">
+<a class="font-['Inter'] text-xs text-slate-500 hover:text-[#e08dff] transition-all" href="#">GitHub</a>
+<a class="font-['Inter'] text-xs text-slate-500 hover:text-[#e08dff] transition-all" href="#">LinkedIn</a>
+<a class="font-['Inter'] text-xs text-slate-500 hover:text-[#e08dff] transition-all" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 px-4 pb-6 flex justify-around items-center">
+<div class="bg-[#22262b]/60 backdrop-blur-md w-full rounded-2xl border border-white/10 flex justify-around items-center h-16 shadow-[0_8px_32px_0_rgba(0,0,0,0.8)]">
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest">About</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="code">code</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest">Skills</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest">Work</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e08dff] bg-white/5 rounded-xl p-2 shadow-[0_0_15px_rgba(224,141,255,0.3)]" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest">Contact</span>
+</a>
+</div>
+</nav>
+<!-- Background Decorative Elements -->
+<div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+<div class="absolute top-[20%] -left-[10%] w-[40%] h-[40%] bg-primary/10 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-[10%] -right-[10%] w-[50%] h-[50%] bg-secondary/10 blur-[150px] rounded-full"></div>
+<div class="absolute top-0 left-0 w-full h-full opacity-[0.03]" data-alt="subtle dark carbon fiber pattern texture background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDpud9rlO_W-TfHI6Qvqo20V2sx1agr8jTXzpa5MGVkwzDKv0cHhAc6Q5UbmYOf1_ZSdlxjo134pPcF97xmpPmffTNaZB9m7UjygExqiblVTHC6zBbBHO9_-sgl6gsNPO99XvfOKCyoHZalXZlxtYNQIRrJEfDrT8YVD-ibUMkNVBA6OqBOJTqENBNBsnJI-pbV0Oh34stoDG9nHe8KFUItjVmlWF3OHEcyto9FRWpCiU97Q1dGgCe8qIuNEDBTgQENaw95OyfIDSYB');"></div>
+</div>
+</body></html>

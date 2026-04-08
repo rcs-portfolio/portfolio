@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #e08dff;
+  --color-primary-dim: #bc00fb;
+  --color-primary-container: #d978ff;
+  --color-on-primary: #4f006c;
+  
+  --color-secondary: #00cbfe;
+  --color-secondary-dim: #00bcec;
+  --color-secondary-container: #006782;
+  --color-on-secondary: #003e50;
+
+  --color-tertiary: #8eff71;
+  --color-tertiary-dim: #2be800;
+  
+  --color-background: #0c0e12;
+  --color-on-background: #f8f9fe;
+
+  --color-surface: #0c0e12;
+  --color-on-surface: #f8f9fe;
+  --color-surface-variant: #22262b;
+  --color-on-surface-variant: #a9abb0;
+  --color-surface-container: #171a1e;
+  --color-surface-container-low: #111417;
+  --color-surface-container-high: #1c2025;
+  --color-surface-container-highest: #22262b;
+
+  --color-error: #ff6e84;
+  --color-on-error: #490013;
+
+  --font-headline: var(--font-space-grotesk), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-body min-h-screen overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(34, 38, 43, 0.6);
+    backdrop-filter: blur(12px);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 15px rgba(224, 141, 255, 0.4);
+  }
+  
+  .bg-mesh {
+    background-image: radial-gradient(at 0% 0%, rgba(224, 141, 255, 0.15) 0px, transparent 50%),
+                      radial-gradient(at 100% 100%, rgba(0, 203, 254, 0.15) 0px, transparent 50%);
+  }
+
+  @keyframes gradient-xy {
+    0%, 100% {
+      background-size: 400% 400%;
+      background-position: 0% 0%;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: 100% 100%;
+    }
+  }
+
+  .animate-gradient-xy {
+    animation: gradient-xy 5s ease infinite;
+  }
+
+  /* Navigation Link Active State */
+  .nav-link-active {
+    @apply text-primary bg-white/5 rounded-xl;
+    box-shadow: 0 0 15px rgba(224, 141, 255, 0.3);
+  }
+
+  .material-symbols-outlined {
+    font-family: var(--font-material-symbols);
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+  .nav-link-active span.material-symbols-outlined {
+    @apply scale-110;
+  }
+
+  .nav-link-active-desktop {
+    @apply text-primary font-bold;
+    text-shadow: 0 0 10px rgba(188, 0, 251, 0.3);
+  }
+}

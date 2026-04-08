@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Toolkit &amp; Creations | Rafael Couto</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#46484c",
+                    "error-dim": "#d73357",
+                    "surface-container": "#171a1e",
+                    "tertiary-dim": "#2be800",
+                    "surface-variant": "#22262b",
+                    "on-secondary-fixed": "#00394a",
+                    "surface-container-lowest": "#000000",
+                    "tertiary-container": "#2ff801",
+                    "surface-bright": "#282c32",
+                    "secondary-container": "#006782",
+                    "on-surface": "#f8f9fe",
+                    "on-error": "#490013",
+                    "tertiary": "#8eff71",
+                    "error": "#ff6e84",
+                    "error-container": "#a70138",
+                    "on-surface-variant": "#a9abb0",
+                    "secondary-fixed": "#89ddff",
+                    "on-secondary": "#003e50",
+                    "tertiary-fixed-dim": "#2be800",
+                    "tertiary-fixed": "#2ff801",
+                    "on-primary": "#4f006c",
+                    "surface-container-high": "#1c2025",
+                    "background": "#0c0e12",
+                    "on-background": "#f8f9fe",
+                    "primary-dim": "#bc00fb",
+                    "on-secondary-fixed-variant": "#005870",
+                    "secondary": "#00cbfe",
+                    "primary-container": "#d978ff",
+                    "surface-tint": "#e08dff",
+                    "secondary-fixed-dim": "#50d2ff",
+                    "surface-dim": "#0c0e12",
+                    "surface": "#0c0e12",
+                    "inverse-on-surface": "#535559",
+                    "primary-fixed": "#d978ff",
+                    "on-tertiary-container": "#0b5800",
+                    "on-primary-fixed-variant": "#4c0068",
+                    "on-primary-container": "#3d0055",
+                    "primary": "#e08dff",
+                    "outline": "#73757a",
+                    "on-error-container": "#ffb2b9",
+                    "on-primary-fixed": "#000000",
+                    "on-tertiary-fixed": "#064200",
+                    "secondary-dim": "#00bcec",
+                    "on-tertiary-fixed-variant": "#0d6200",
+                    "surface-container-highest": "#22262b",
+                    "inverse-primary": "#9a00cf",
+                    "inverse-surface": "#f8f9fe",
+                    "on-tertiary": "#0d6100",
+                    "primary-fixed-dim": "#d160ff",
+                    "on-secondary-container": "#eff9ff",
+                    "surface-container-low": "#111417"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .glass-effect {
+        backdrop-filter: blur(12px);
+        background: rgba(34, 38, 43, 0.6);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glow-primary {
+        box-shadow: 0 0 24px -4px rgba(188, 0, 251, 0.2);
+      }
+      .glow-secondary {
+        box-shadow: 0 0 24px -4px rgba(0, 203, 254, 0.2);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container/30">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0c0e12]/60 backdrop-blur-xl shadow-[0_0_20px_rgba(188,0,251,0.15)]">
+<div class="flex items-center justify-between px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#e08dff]" data-icon="terminal">terminal</span>
+<span class="text-xl font-bold bg-gradient-to-r from-[#e08dff] to-[#00cbfe] bg-clip-text text-transparent font-headline tracking-tighter">Rafael Couto</span>
+</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8 font-label text-sm">
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200" href="#">Home</a>
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200" href="#">About</a>
+<a class="text-[#e08dff] transition-colors duration-200" href="#">Skills</a>
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200" href="#">Work</a>
+<a class="text-slate-400 hover:text-[#00cbfe] transition-colors duration-200" href="#">Contact</a>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Hero Title Section -->
+<header class="mb-16 md:mb-24">
+<h1 class="text-[3.5rem] md:text-[5rem] font-headline font-bold leading-none tracking-tighter mb-4">
+                Toolkit &amp; <br/>
+<span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Creations.</span>
+</h1>
+<p class="max-w-xl text-on-surface-variant text-lg font-light leading-relaxed">
+                Architecting high-performance digital environments using advanced technological stacks. From neural interfaces to decentralized databases.
+            </p>
+</header>
+<!-- Skills Grid Section -->
+<section class="mb-24">
+<div class="flex items-center gap-4 mb-10">
+<div class="h-px flex-1 bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"></div>
+<h2 class="font-headline text-2xl font-medium tracking-tight">System Core</h2>
+<div class="h-px flex-1 bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"></div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+<!-- Skill: React -->
+<div class="group relative flex flex-col items-center justify-center p-8 rounded-xl bg-surface-container-low border border-outline-variant/10 hover:border-secondary/30 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-3 group-hover:scale-110 transition-transform" data-icon="rebase_edit">rebase_edit</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">React</span>
+<div class="absolute -top-12 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] glow-secondary whitespace-nowrap">
+                        Component Architecture
+                    </div>
+</div>
+<!-- Skill: Node -->
+<div class="group relative flex flex-col items-center justify-center p-8 rounded-xl bg-surface-container-low border border-outline-variant/10 hover:border-primary/30 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-3 group-hover:scale-110 transition-transform" data-icon="lan">lan</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Node.js</span>
+<div class="absolute -top-12 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-[10px] glow-primary whitespace-nowrap">
+                        Asynchronous Runtime
+                    </div>
+</div>
+<!-- Skill: Python -->
+<div class="group relative flex flex-col items-center justify-center p-8 rounded-xl bg-surface-container-low border border-outline-variant/10 hover:border-secondary/30 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-3 group-hover:scale-110 transition-transform" data-icon="memory">memory</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Python</span>
+<div class="absolute -top-12 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] glow-secondary whitespace-nowrap">
+                        Computational Logic
+                    </div>
+</div>
+<!-- Skill: AWS -->
+<div class="group relative flex flex-col items-center justify-center p-8 rounded-xl bg-surface-container-low border border-outline-variant/10 hover:border-primary/30 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-3 group-hover:scale-110 transition-transform" data-icon="cloud">cloud</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">AWS</span>
+<div class="absolute -top-12 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-[10px] glow-primary whitespace-nowrap">
+                        Cloud Infrastructure
+                    </div>
+</div>
+<!-- Skill: TypeScript -->
+<div class="group relative flex flex-col items-center justify-center p-8 rounded-xl bg-surface-container-low border border-outline-variant/10 hover:border-secondary/30 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-3 group-hover:scale-110 transition-transform" data-icon="verified">verified</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">TypeScript</span>
+<div class="absolute -top-12 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] glow-secondary whitespace-nowrap">
+                        Strict Type Safety
+                    </div>
+</div>
+<!-- Skill: GraphQL -->
+<div class="group relative flex flex-col items-center justify-center p-8 rounded-xl bg-surface-container-low border border-outline-variant/10 hover:border-primary/30 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-3 group-hover:scale-110 transition-transform" data-icon="hub">hub</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">GraphQL</span>
+<div class="absolute -top-12 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-[10px] glow-primary whitespace-nowrap">
+                        Query Optimization
+                    </div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="space-y-12">
+<div class="flex justify-between items-end gap-4 border-b border-outline-variant/10 pb-6">
+<h2 class="font-headline text-3xl font-bold tracking-tight">Selected Works</h2>
+<span class="font-label text-xs text-on-surface-variant uppercase tracking-tighter">Iteration 2024.1</span>
+</div>
+<!-- Project Card 1: Asymmetric Layout -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface-container-high rounded-2xl overflow-hidden group">
+<div class="lg:col-span-7 relative h-64 lg:h-[450px]">
+<img alt="Project Preview" class="absolute inset-0 w-full h-full object-cover" data-alt="futuristic dark mode web interface with neon purple charts and data visualizations on a dark glass background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhbufWnLFK4jIxxyIWJbL9SDi7cxAr7MQvx-cMFzBZ_Wr2VyqBK689XqM5FR0BaqzSUxB8dE15gHonyHidEgXxxNxXHhGESUyUdkUnDc4jEsLt0QNUt8B-AMZeZdj5cnUZLa1yII4xzuwlbm6VqBhl5HJ_Zk3XmqFPZ_j_ZIM0fKqpUKXAH6Udt1NJg_nKuR4M1sOyQkt3MWASkegGL7gtrod-MSzUqtacvMcmQnRvKj__lclHHNU3k0rEPvDKPByE8e-hLqColU-l"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high via-transparent to-transparent"></div>
+</div>
+<div class="lg:col-span-5 p-8 lg:p-12">
+<div class="flex gap-2 mb-6">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-wider">Next.js</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-bold uppercase tracking-wider">Tailwind</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-4">Neural Analytics</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        A real-time data processing engine for biological sensors, translating neural patterns into actionable visual insights for medical professionals.
+                    </p>
+<div class="mb-8">
+<p class="text-[10px] uppercase font-bold text-primary mb-2 tracking-widest">Challenge Overcome</p>
+<p class="text-on-surface text-sm">Reduced data latency by 45% through custom WebWorker implementation and edge-caching strategies.</p>
+</div>
+<div class="flex gap-4">
+<a class="flex-1 text-center py-3 bg-gradient-to-r from-primary to-secondary text-on-primary-fixed rounded-lg font-bold text-sm hover:glow-primary transition-all duration-200" href="#">Live Demo</a>
+<a class="flex items-center justify-center px-6 border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="terminal">terminal</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Project Card 2: Reversed Layout -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface-container-high rounded-2xl overflow-hidden group">
+<div class="lg:col-span-5 p-8 lg:p-12 order-2 lg:order-1">
+<div class="flex gap-2 mb-6">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-wider">Rust</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-bold uppercase tracking-wider">Solana</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-4">Void Protocol</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        A decentralized storage protocol designed for high-availability file distribution across multiple node networks with zero-knowledge encryption.
+                    </p>
+<div class="mb-8">
+<p class="text-[10px] uppercase font-bold text-primary mb-2 tracking-widest">Challenge Overcome</p>
+<p class="text-on-surface text-sm">Implemented a proprietary sharding algorithm that ensures 99.99% data integrity during peer-to-peer sync.</p>
+</div>
+<div class="flex gap-4">
+<a class="flex-1 text-center py-3 bg-gradient-to-r from-primary to-secondary text-on-primary-fixed rounded-lg font-bold text-sm hover:glow-primary transition-all duration-200" href="#">Live Demo</a>
+<a class="flex items-center justify-center px-6 border border-outline-variant/20 rounded-lg hover:bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="terminal">terminal</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 relative h-64 lg:h-[450px] order-1 lg:order-2">
+<img alt="Project Preview" class="absolute inset-0 w-full h-full object-cover" data-alt="abstract digital representation of a mesh network with glowing lines and interconnected nodes in deep electric blue and obsidian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1T4O4WG0PxtpeO-f0_VSjBhwIH1GUH3lNRGcbfGCRsRBybIYwVmhwIlrZvmYIP1wDZLk-HHMvXs_TtQsl55u6qw_4_8rItJ3w6gk78MSm4XTE9RH9fFsZcDK-rka4H0-ikX_2lzb4QhHgkHQEmkQYCJEYiwYtJkyCCqprN5Flrg-7FYI2XPm-YOhpIOvhfjuM7aQJ9wwBxNaOQBVbWvcT0Vj4f53olZkIKkQdQQsKPDPiwc0Bq1dBmOO-28oh1YtydiZr81xfWNJz"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high via-transparent to-transparent"></div>
+</div>
+</article>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#111417] w-full pt-12 pb-24 px-6 mt-12">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 w-full max-w-7xl mx-auto">
+<div class="text-[#e08dff] font-bold font-headline">Rafael Couto</div>
+<div class="font-['Inter'] text-xs text-slate-500">© 2024 Rafael Couto // BUILT IN THE VOID</div>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-[#e08dff] transition-all text-xs font-label uppercase tracking-widest" href="#">GitHub</a>
+<a class="text-slate-500 hover:text-[#e08dff] transition-all text-xs font-label uppercase tracking-widest" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-[#e08dff] transition-all text-xs font-label uppercase tracking-widest" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden fixed bottom-0 w-full z-50 px-4 pb-6 flex justify-around items-center">
+<nav class="bg-[#22262b]/60 backdrop-blur-md fixed bottom-4 left-1/2 -translate-x-1/2 w-[92%] rounded-2xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.8)] flex justify-around items-center p-2">
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">About</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e08dff] bg-white/5 rounded-xl p-2 shadow-[0_0_15px_rgba(224,141,255,0.3)] scale-110 duration-200 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="code">code</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Skills</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Work</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Contact</span>
+</a>
+</nav>
+</div>
+</body></html>
